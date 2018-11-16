@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder | Find Your Unicorn</title>
+    <link rel="icon" type="image/ico" href="http://spiro-drones.com/wp-content/uploads/2017/03/unicorn_favicon.ico">
+    <link rel="stylesheet" href="../public/assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <style>
+        body {
+            background-image: url(http://spiro-drones.com/wp-content/uploads/2017/03/unicorn.jpg);
+            background-size: repeat;
+        }
+
+        p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .bg-light {
+            background-color: #e9ecef !important;
+        }
+
+        .btn-primary {
+            color: #000;
+            background-color: #C2B6DA !important;
+            border-color: #C2B6DA !important;
+        }
+
+        a {
+            color: #DCA59E;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        a:hover {
+            color: #C2B6DA;
+            text-decoration: underline;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"><i class="fas fa-democrat"></i> Friend Finder <i class="fas fa-democrat"></i></h1>
+            <hr>
+            <h2 class="text-center">Answer a quick 10 questions survey.</h2>
+            <h2 class="text-center">Then find the friend with the greatest compatibility!</h2>
+            <br>
+            <div class="text-center">
+                <a href="/survey"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> Go to
+                        Survey</button></a>
+            </div>
+        </div>
+        <footer class="footer bg-light p-1 text-center">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/nicolaskennof/13-FriendFinder"
+                        target="_blank">GitHub Repo</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

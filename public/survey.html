@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder | Find Your Unicorn</title>
+    <link rel="icon" type="image/ico" href="http://spiro-drones.com/wp-content/uploads/2017/03/unicorn_favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <style>
+        body {
+                background-image: url(http://spiro-drones.com/wp-content/uploads/2017/03/unicorn.jpg);
+                background-size: repeat;
+            }
+    
+            p {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+    
+            .bg-light {
+                background-color: #e9ecef !important;
+            }
+    
+            .btn-primary {
+                color: #000;
+                background-color: #C2B6DA !important;
+                border-color: #C2B6DA !important;
+            }
+    
+            a {
+                color: #DCA59E;
+                text-decoration: none;
+                background-color: transparent;
+            }
+    
+            a:hover {
+                color: #C2B6DA;
+                text-decoration: underline;
+            }
+    
+            img {
+                width: 300px;
+                height: auto;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"><i class="fas fa-democrat"></i> Friend Finder <i class="fas fa-democrat"></i></h1>
+            <hr>
+            <h2 class="text-center">Survey Questions</h2>
+        </div>
+        <div class="bg-light p-2">
+            <h3>About you</h3>
+            <br>
+            <!-- Survey Questions-->
+            <form>
+                <div class="form-group">
+                    <label for="name">Name (required)</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="url">Link to photo image (required)</label>
+                    <input type="text" class="form-control" id="url">
+                </div>
+                <br>
+                <div>
+                    <h4>Question 1</h4>
+                    <label for="question1">How much do you like pizza:</label>
+                    <select class="form-control" id="q1" name="pizza" style="width: 350px">
+                        <option>1 (not at all)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (love it!)</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <h4>Question 2</h4>
+                    <label for="question2">How much do you like beer?</label>
+                    <select class="form-control" id="q2" name="beer" style="width: 350px">
+                        <option>1 (not at all)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (love it!)</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <h4>Question 3</h4>
+                    <label for="question3">How much do you like night clubs?</label>
+                    <select class="form-control" id="q3" name="clubing" style="width: 350px">
+                        <option>1 (not at all)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (love it!)</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <h4>Question 4</h4>
+                    <label for="question4">How much do you like to laugh?</label>
+                    <select class="form-control" id="q4" name="fun" style="width: 350px">
+                        <option>1 (not at all)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (love it!)</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <h4>Question 5</h4>
+                    <label for="question5">How much do you like to travel?</label>
+                    <select class="form-control" id="q5" name="travel" style="width: 350px">
+                        <option>1 (not at all)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (love it!)</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <h4>Question 6</h4>
+                    <label for="question6">How much do you like to share experiences?</label>
+                    <select class="form-control" id="q6" name="experience" style="width: 350px">
+                        <option>1 (not at all)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (love it!)</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <h4>Question 7</h4>
+                    <label for="question7">How much nerd are you?</label>
+                    <select class="form-control" id="q7" name="nerd" style="width: 350px">
+                        <option>1 (not at all)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (totally am!)</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <h4>Question 8</h4>
+                    <label for="question8">How much do you like frontend programing?</label>
+                    <select class="form-control" id="q8" name="frontend" style="width: 350px">
+                        <option>1 (not at all)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (love it!)</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <h4>Question 9</h4>
+                    <label for="question9">How much do you like backend programing?</label>
+                    <select class="form-control" id="q9" name="backend" style="width: 350px">
+                        <option>1 (not at all)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (love it!)</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <h4>Question 10</h4>
+                    <label for="question10">How much do you like Tropical House Music?</label>
+                    <select class="form-control" id="q10" name="music" style="width: 350px">
+                        <option>1 (not at all)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (love it!)</option>
+                    </select>
+                    <br>
+                </div>
+                <br>
+                <!-- Button that will trigger the "Best Match modal -->
+                <button type="button" class="btn btn-primary" id="unicorn_btn" data-toggle="modal" data-target="#bestMatch">See
+                    your unicorn</button>
+            </form>
+
+            <!-- Best Match Modal-->
+            <!-- Modal -->
+            <div class="modal fade" id="bestMatch" tabindex="-1" role="dialog" aria-labelledby="bestMatchLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle"><i class="fas fa-democrat"></i> And your unicorn
+                                is...</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div>
+                                        <h5 id="bestMatchName"></h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 text-right">
+                                    <div><img id="bestMatchPic" src=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="closeModal" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer bg-light p-1 text-center mt-4">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/nicolaskennof/13-FriendFinder"
+                        target="_blank">GitHub Repo</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $("#unicorn_btn").on("click", function () {
+            event.preventDefault();
+            var name = $("#name").val().trim();
+            var url = $("#url").val().trim();
+            var answer1 = parseInt($("#q1").val().trim());
+            var answer2 = parseInt($("#q2").val().trim());
+            var answer3 = parseInt($("#q3").val().trim());
+            var answer4 = parseInt($("#q4").val().trim());
+            var answer5 = parseInt($("#q5").val().trim());
+            var answer6 = parseInt($("#q6").val().trim());
+            var answer7 = parseInt($("#q7").val().trim());
+            var answer8 = parseInt($("#q8").val().trim());
+            var answer9 = parseInt($("#q9").val().trim());
+            var answer10 = parseInt($("#q10").val().trim());
+            var newFriend = {
+                name: name,
+                picture: url,
+                scores: [
+                    answer1,
+                    answer2,
+                    answer3,
+                    answer4,
+                    answer5,
+                    answer6,
+                    answer7,
+                    answer8,
+                    answer9,
+                    answer10,
+                ]
+            }
+
+            $.post("/api/friends", newFriend, function (match) {
+                $("#bestMatchName").text(match.name);
+                $("#bestMatchPic").attr("src", match.picture);
+                });
+        });
+
+         $("#bestMatch").on("hidden.bs.modal", function () {
+            location.assign("/survey");
+            }
+         );
+
+         /*$('#results-modal').on('hidden.bs.modal', function () {
+            location.assign("/");
+        })*/
+    </script>
+</body>
+
+</html>

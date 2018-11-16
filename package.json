@@ -1,0 +1,25 @@
+{
+  "name": "13-friendfinder",
+  "version": "1.0.0",
+  "description": "Find the who would be your best friend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolaskennof/13-friendfinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolaskennof/13-friendfinder/issues"
+  },
+  "homepage": "https://github.com/nicolaskennof/13-friendfinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {}
+}
